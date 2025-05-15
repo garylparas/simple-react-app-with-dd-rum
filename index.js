@@ -5,8 +5,8 @@ import { createRoot } from 'react-dom/client';
 import { Datacenter, datadogRum } from '@datadog/browser-rum';
 
 datadogRum.init({
-    applicationId: '<DATADOG_APPLICATION_ID>',
-    clientToken: '<DATADOG_CLIENT_TOKEN>',
+    applicationId: '<REPLACE_ME>',
+    clientToken: 'DATADOG_CLIENT_TOKEN',
     site: 'datadoghq.com',
     service: 'gparas-test',
     env: 'dev',
@@ -14,7 +14,7 @@ datadogRum.init({
     sessionSampleRate: 100,
     sessionReplaySampleRate: 100,
     defaultPrivacyLevel: 'mask-user-input',
-    proxy: 'http://localhost:8080/',
+    proxy: 'http://localhost:8080/dd-rum',
 });
 
 class App extends React.Component {
