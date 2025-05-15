@@ -2,8 +2,11 @@
 
 react, react-dom, webpack, babel.
 
-## Start
+
+
+## Install and Start
 
 ```shell
+npm install
 npm run start
 ```
