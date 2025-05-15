@@ -5,8 +5,8 @@ import { createRoot } from 'react-dom/client';
 import { Datacenter, datadogRum } from '@datadog/browser-rum';
 
 datadogRum.init({
-    applicationId: 'bc202dc8-0447-48c2-a239-10871971c9ef',
-    clientToken: 'pub08cce816a30dc0b7c00c4772424d197d',
+    applicationId: '<DATADOG_APPLICATION_ID>',
+    clientToken: '<DATADOG_CLIENT_TOKEN>',
     site: 'datadoghq.com',
     service: 'gparas-test',
     env: 'dev',
@@ -24,5 +24,5 @@ class App extends React.Component {
 }
 
 const container = document.getElementById('root');
-const root = createRoot(container);  // ✅ React 18
+const root = createRoot(container);
 root.render(<App />);
